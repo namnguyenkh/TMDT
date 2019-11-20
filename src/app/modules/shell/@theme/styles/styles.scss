@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+// themes - our custom or/and out of the box themes
+@import "themes";
+
+// framework component themes (styles tied to theme variables)
+@import "~@nebular/theme/styles/globals";
+
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+@import "~primeng/resources/primeng.min.css";
+
+@import "common";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
+
+// loading progress bar theme
+@import "./pace.theme";
+
+@import "./layout";
+@import "./overrides";
+@import "./_vt-modal-style.scss";
+@import "./_vt-text-style.scss";
+
+
+// install the framework and custom global styles
+@include nb-install() {
+  // framework global styles
+  @include nb-theme-global();
+
+  @include ngx-layout();
+
+  // loading progress bar
+  @include ngx-pace-theme();
+
+  @include nb-overrides();
+}
+
+// show error
+.vt-error-text {
+  margin: 5px 0px;
+  color: #dc3545;
+  font-size: 14px;
+  height: 28px;
+}
+
+.icon {
+  .fa-icon {
+    position: relative;
+    top: 2px;
+    left: 4px;
+  }
+}
+
+.fa-icon {
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+
+.splash-preview {
+  height: 60vh;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: #f9f9f9;
+  border: 0.5px solid #e4e4e4;
+  padding: 1rem;
+}
+
+.span-cursor {
+  :hover {
+    cursor: pointer;
+  }
+}
+
+body .ui-table .ui-table-tbody tr.ui-state-highlight {
+  background-color: inherit !important;
+  color: #333333 !important;
+}
+
+body .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight {
+  color: #c5bcbc !important;
+  background-color: inherit !important;
+}
+
+.display-flex-end {
+  .ui-paginator {
+    display: flex;
+    justify-content: flex-end;
+    .ui-inputwrapper-filled {
+      order: 1;
+    }
+    .ui-paginator-current {
+      order: 2;
+    }
+    .ui-paginator-first {
+      order: 3;
+    }
+    .ui-paginator-prev {
+      order: 4;
+    }
+    .ui-paginator-pages {
+      order: 5;
+      display: none !important;
+    }
+    .ui-paginator-next {
+      order: 6;
+    }
+    .ui-paginator-last {
+      order: 7;
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 250px;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+.slider-image {
+  .image-selected {
+    text-align: center;
+    padding: 0;
+    img {
+      display: block;
+      width: 145px;
+      height: 145px;
+      -webkit-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      object-fit: cover;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.preview-mobile {
+  width: 310px;
+  height: 530px;
+  overflow: hidden;
+}
+
+.preview-tablet {
+  width: 740px;
+  height: 510px;
+  overflow: hidden;
+}
+
+.preview-laptop {
+  width: 740px;
+  height: 460px;
+  overflow: hidden;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

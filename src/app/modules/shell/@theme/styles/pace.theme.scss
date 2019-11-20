@@ -1,0 +1,119 @@
+@mixin ngx-pace-theme() {
+  .pace .pace-progress {
+    background: nb-theme(color-primary-default);
+  }
+
+  .pace .pace-progress-inner {
+    box-shadow: 0 0 10px nb-theme(color-primary-default), 0 0 5px nb-theme(color-primary-default);
+  }
+
+  .pace .pace-activity {
+    display: none;
+  }
+}
+
+.vt-login-logo {
+  width: 150px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url("../../../../../assets/icons/letter-h-3.png");
+  background-size: cover;
+}
+
+// show error
+.vt-error-text {
+  padding: 5px 0px;
+  color: red;
+  font-size: 14px;
+  height: 28px;
+}
+
+.vt-error-text {
+  color: red;
+  font-size: 14px;
+  height: 28px;
+}
+
+.container-image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container-image:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.container-image img {
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 400px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top 0.5s ease;
+}
+
+.button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  margin: auto !important;
+}
+
+.button a {
+  width: 150px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  text-align: center;
+  background: white;
+}
+
+.container-image:hover .button {
+  opacity: 1;
+}
+
+.vt-btn-icon-margin-top{
+  margin-top: 1.9rem !important;
+}
+// End Image lib style
+
+.vt-svg-icon{
+  width: 20px;
+}
+
+// fix image preview
+.img-gallery{
+  max-height: 400px;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+}
+
+// Fix align inputswitch
+body .ui-inputswitch{
+  margin-top: 0.3rem !important;
+}

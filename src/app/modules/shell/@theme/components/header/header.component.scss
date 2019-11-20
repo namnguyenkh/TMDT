@@ -1,0 +1,108 @@
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~@nebular/theme/styles/global/breakpoints";
+@import "../../styles/themes";
+@import '../../../../../../../node_modules/primeng/resources/themes//nova-light/theme.css';
+@import '../../../../../../../node_modules/primeng/resources/primeng.min.css';
+@include nb-install-component() {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
+  }
+
+  nb-action {
+    height: auto;
+    display: flex;
+    align-content: center;
+  }
+
+  nb-user {
+    cursor: pointer;
+  }
+
+  ::ng-deep nb-search button {
+    padding: 0 !important;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+
+    .sidebar-toggle {
+      @include nb-ltr(padding-right, 1.25rem);
+      @include nb-rtl(padding-left, 1.25rem);
+      text-decoration: none;
+      color: nb-theme(text-hint-color);
+      nb-icon {
+        font-size: 1.75rem;
+      }
+    }
+
+
+    .logo {
+      padding: 0 1.25rem;
+      font-size: 1.75rem;
+      @include nb-ltr(border-left, 1px solid nb-theme(divider-color));
+      @include nb-rtl(border-right, 1px solid nb-theme(divider-color));
+      white-space: nowrap;
+      text-decoration: none;
+      border-left: none !important;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .control-item {
+      display: none;
+    }
+    .user-action {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  @include media-breakpoint-down(is) {
+    nb-select {
+      display: none;
+    }
+  }
+}
+
+.vt-nav-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.vt-login-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background-image: url("../../../../../../assets/icons/letter-h-3.png");
+  background-size: cover;
+}
+.title-store {
+  width: 100px;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: greenyellow;
+}
+:host {
+  ::ng-deep .prime-slider-override {
+      background-color: skyblue;
+      background-image:none;
+      border:white;
+      color:white;
+      border-color: white;
+      width: auto;
+      height: 50px;
+
+      .ui-slider-range {
+          background: red;
+      }
+  }
+}

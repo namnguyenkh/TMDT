@@ -1,0 +1,134 @@
+@import "./themes";
+
+@mixin nb-overrides() {
+  nb-select.size-medium button {
+    padding: 0.4375rem 2.2rem 0.4375rem 1.125rem !important;
+
+    nb-icon {
+      right: 0.41rem !important;
+    }
+  }
+}
+
+// Pading of main card
+.nb-theme-viettel nb-layout .layout .layout-container .content .columns nb-layout-column {
+  padding: 1.25rem 1.25rem 0.75rem !important;
+}
+
+// Override style is-invalid input
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+// Fix z-index dropdown
+.nb-theme-viettel .cdk-overlay-container {
+  z-index: 1060 !important;
+}
+
+/**
+ * OVERRIDE CARD BODY
+ * USING: add class "layout-body-content"
+ */
+ .nb-theme-viettel nb-card-body.layout-body-content {
+  padding: 1rem;
+  min-height: 70vh;
+}
+
+.nb-theme-viettel [nbButton].appearance-filled {
+  text-transform: inherit !important;
+}
+
+.nb-theme-viettel nb-card-header {
+  text-transform: uppercase !important;
+}
+
+/**
+ * OVERRIDE EDITOR TOOL BAR
+ * USING: add class: "input-editor"
+ */
+.input-editor .angular-editor-toolbar-set:nth-child(1),
+.input-editor .angular-editor-toolbar-set:nth-child(4),
+.input-editor .angular-editor-toolbar-set:nth-child(5),
+.input-editor .angular-editor-toolbar-set:nth-child(6),
+.input-editor .angular-editor-toolbar-set:nth-child(10),
+.input-editor .angular-editor-toolbar-set:nth-child(11),
+.input-editor .angular-editor-toolbar-set:nth-child(12),
+.input-editor .angular-editor-toolbar-set:nth-child(13) {
+  display: none !important;
+}
+.ae-picker-label::before {
+  height: 20px !important;
+}
+
+//*****Item change color for header
+// Change header background
+.nb-theme-viettel nb-layout-header {
+  background: rgb(20, 158, 212) !important;
+  background: linear-gradient(99deg, rgba(34, 193, 195, 1) 0, rgba(253, 158, 45, 1) 100%) !important;
+}
+
+.nb-theme-viettel nb-action nb-icon {
+  color: white !important;
+}
+
+.nb-theme-viettel nb-action {
+  border-left: none !important;
+}
+
+//Style color header table
+body .ui-table .ui-table-thead > tr > th {
+  i{
+    color: #ffffff !important;
+  }
+  color: #ffffff;
+  background-color: #2c918c;
+}
+
+body .ui-table .ui-table-thead > tr > th:hover {
+  i{
+    color: #ffffff !important;
+  }
+  color: #ffffff !important;
+  background-color: #2c918c !important;
+}
+
+body .ui-table .ui-table-thead > tr > th:focus {
+  i{
+    color: #ffffff !important;
+  }
+  color: #ffffff !important;
+  background-color: #2c918c !important;
+}
+
+body .ui-table .ui-table-thead > tr > th:visited {
+  i{
+    color: #ffffff !important;
+  }
+  color: #ffffff !important;
+  background-color: #2c918c !important;
+}
+
+body .ui-table .ui-sortable-column.ui-state-highlight{
+  background-color: #2c918c !important;
+}
+
+.nb-theme-viettel nb-menu .menu-item a {
+  text-align: left !important;
+  padding-left: 9px;
+}
+
+/**
+ * OVERRIDE EDITOR NB SELECT
+ * USING: add class: "validate-item"
+ */
+nb-select.validate-item.ng-pristine.ng-invalid.ng-touched .select-button{
+  border-color: #d0392e !important;
+}
+
+/**
+ * OVERRIDE EDITOR NB CHECKBOX
+ * USING: add class: "select-all-option"
+ */
+nb-option.select-all-option nb-checkbox{
+  display: none !important;
+}

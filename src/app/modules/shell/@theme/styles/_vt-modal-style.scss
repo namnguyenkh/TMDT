@@ -1,0 +1,20 @@
+// CUSTOM MODAL STYLE
+// ================================================
+
+// ERROR MODAL STYLE
+.modal-error-icon {
+  font-size: 40px;
+  color: #cc0000;
+}
+
+.modal-error-font-color {
+  color: #cc0000;
+}
+
+.modal-header-error {
+  background-color: #cc0000 !important;
+  span {
+    color: white;
+    font-size: .8125rem;
+  }
+}

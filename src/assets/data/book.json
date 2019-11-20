@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Toi Thay Hoa Vang Tren Co Xanh",
+    "code": "122123ss",
+    "nameGenre": "Thieu Nhi",
+    "nameAuthor": "Nguyen Ngoc Anh",
+    "namePublisher": "Kim Dong",
+    "status": true
+  },
+  {
+    "id": 2,
+    "name": "Toi Thay Hoa Vang Tren Co Xanh",
+    "code": "122123ss",
+    "nameGenre": "Thieu Nhi",
+    "nameAuthor": "Nguyen Ngoc Anh",
+    "namePublisher": "Kim Dong",
+    "status": true
+  },
+  {
+    "id": 3,
+    "name": "Toi Thay Hoa Vang Tren Co Xanh",
+    "code": "122123ss",
+    "nameGenre": "Thieu Nhi",
+    "nameAuthor": "Nguyen Ngoc Anh",
+    "namePublisher": "Kim Dong",
+    "status": true
+  }
+]

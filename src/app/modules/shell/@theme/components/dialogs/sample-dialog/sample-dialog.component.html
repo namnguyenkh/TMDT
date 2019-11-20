@@ -1,0 +1,105 @@
+<div class="modal-header">
+  <span class="modal-title" id="modal-basic-title"> {{ title }}</span>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-lg-12">
+      <form #entrySampleForm="ngForm" [formGroup]="sampleForm" (ngSubmit)="submitCommand(sampleForm)" novalidate>
+
+        <!-- {{ inData.sample }}  -->
+        <!-- Add new -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="label" class="custom-file-label" for="customFile">Thêm ảnh</label>
+            </div>
+          </div>
+        </div>
+        <!-- Page Content -->
+        <div class="row text-center text-lg-left mt-5">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100 container-image">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="" />
+              <div class="overlay"></div>
+              <div class="button"><a href="#"> CHỌN </a></div>
+            </a>
+          </div>
+        </div>
+        <!-- /.container -->
+
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="p-2 bd-highlight">
+      <button type="submit" nbButton size="small" status="danger" (click)="closeCommand()">
+        <span>{{ 'dialog.common.btn_cancel' | translate }}</span>
+      </button>
+    </div>
+    <div class="p-2 bd-highlight">
+      <button nbButton size="small" status="primary" (click)="entrySampleForm.ngSubmit.emit()">
+        <span>{{ 'dialog.common.btn_ok' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

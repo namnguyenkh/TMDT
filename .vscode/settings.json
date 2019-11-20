@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": true,
+  "editor.rulers": [
+    120
+  ],
+  "editor.renderWhitespace": "all",
+  "files.exclude": {
+    "coverage/": true,
+    "dist/": true,
+    "node_modules/": true,
+    "src/app/.vs*": true,
+    "test/": true
+  },
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single"
+}

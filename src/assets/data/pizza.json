@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "PIZZA MẶT TRỜI",
+      "type": "Non-Vegan",
+      "description": "Tôm, bí ngòi, phô mai 2 màu, phô mai Mozza, cà bi, olive, ngò tây, xốt Pesto",
+      "sizes": 12,
+      "price": 275.000,
+      "imageUrl": "https://thepizzacompany.vn/116-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "2",
+      "name": "PIZZA MẶT TRĂNG",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/114-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "3",
+      "name": "PIZZA HẢI SẢN CAO CẤP",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/116-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "4",
+      "name": "PIZZA TÔM VIỀN PHÔ MAI 3 VỊ",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/243-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "5",
+      "name": "PIZZA HẢI SẢN XỐT PESTO",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/295-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "6",
+      "name": "PIZZA THẬP CẨM CAO CẤP",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/295-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "7",
+      "name": "PIZZA THẬP CẨM",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/117-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "8",
+      "name": "PIZZA CƠN LỐC HẢI SẢN",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/121-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "9",
+      "name": "PIZZA THỊT VÀ XÚC XÍCH",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/122-home_default/pizza-hawaii.jpg"
+    },
+    {
+      "id": "10",
+      "name": "PIZZA HẢI SẢN XỐT TIÊU ĐEN",
+      "type": "Non-Vegan",
+      "description": "Gà xé sa tế, trứng muối, đậu bi, thịt nguội, bắp, Mozza cheese, bột trứng muối, xốt Cheesy mayo",
+      "sizes": 12,
+      "price": 235.000,
+      "imageUrl": "https://thepizzacompany.vn/280-home_default/pizza-hawaii.jpg"
+    }
+  ]
+}

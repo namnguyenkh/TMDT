@@ -1,0 +1,29 @@
+<!-- Modal header -->
+<div class="modal-header">
+  <span class="modal-title" id="modal-basic-title"> {{ title }}</span>
+</div>
+<!-- Modal content -->
+<div class="modal-body">
+  <div class="row">
+    <div class="col-lg-12">
+      <span>
+        {{ message }}
+      </span>
+    </div>
+  </div>
+</div>
+<!-- Modal footer -->
+<div class="modal-footer">
+  <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="p-2 bd-highlight">
+      <button nbButton size="small" status="primary" (click)="closeCommand(false)">
+        <span>{{ 'dialog.common.btn_no' | translate }}</span>
+      </button>
+    </div>
+    <div class="p-2 bd-highlight">
+      <button nbButton size="small" status="primary" (click)="closeCommand(true)">
+        <span>{{ 'dialog.common.btn_yes' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

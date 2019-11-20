@@ -1,0 +1,30 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle vt-color-white" style="color: rgb(125, 243, 102)">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo vt-nav-logo" href="#" (click)="navigateHome()" alt="Logo">
+      <img src="../../../../../../assets/icons/letter-h-3.png" alt="Logo" />
+
+    </a>
+  </div>
+  <!-- <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+  </nb-select> -->
+</div>
+<div class="header-container">
+  <nb-actions size="small">
+    <nb-action class="user-action" icon="bell"></nb-action>
+    <nb-action class="user-action">
+      <nb-user
+        [nbContextMenu]="userMenu"
+        [name]="name"
+        [onlyPicture]="userPictureOnly"
+        [picture]="base64image"
+        title="Engineer"
+        >
+      </nb-user>
+    </nb-action>
+
+  </nb-actions>
+</div>
