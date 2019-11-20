@@ -3,7 +3,6 @@
 - After install nodejs, open terminal and run command as below:  
 
 # 2. Checkout and build source code
-- Checkout source: https://gcsgit.cybersoft-vn.com/ia-viettel/viettel-cwm-admin-ui.git
 - From source folder, open terminal then run follow command:  
 npm install
 - To bundle source run: npm run build:prod
